@@ -61,7 +61,7 @@ function Home() {
 
                         {/* footer */}
                         <div className='home-page-right-side-footer-container'>
-                            <p>Not Part of out community yet , click join to register </p>
+                            <p>Not Part of out community yet , click join to be part of our growing community. </p>
                         </div>
 
                     </div>
