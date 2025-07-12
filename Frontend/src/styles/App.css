@@ -1,0 +1,35 @@
+/* CSS File - App 
+
+This css file is used for the App page
+
+*/
+
+
+/*--------------------- Global CSS  ------------------*/
+
+/* Global Css - Brand Identity*/
+
+
+:root {
+
+  /* Colors*/
+  --primary-color : #92C1DB;
+  --primary-color-rgb: 146, 193, 219; /* Store RGB value here */
+  --secondary-color : #cbcbcb;
+
+  /*Family*/
+  --fonts-family: Arial, Helvetica, sans-serif ;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;}
+
+.application-main-container {
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

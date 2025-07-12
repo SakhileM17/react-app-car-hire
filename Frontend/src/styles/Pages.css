@@ -1,0 +1,122 @@
+/* CSS File - Pages
+
+This css file is used for all the pages
+
+*/
+
+
+/*--------------------- Global CSS  ------------------*/
+
+/* Global Css - Brand Identity*/
+
+:root {
+
+  /* Colors*/
+  --primary-color : #92C1DB;
+  --primary-color-rgb: 146, 193, 219; /* Store RGB value here */
+  --secondary-color : #e8e8e8;
+
+  /*Family*/
+  /*Family*/
+  --fonts-family: Arial, Helvetica, sans-serif ;
+ 
+
+}
+
+/* ---------------------------------
+            Main Container 
+----------------------------------*/
+.page-main-container {
+   
+    display: flex;
+    width: 98%;
+    height: 98%;
+    margin: auto;
+}
+
+/* ---------------------------------
+            Home Page Container 
+------------------------------------*/
+
+.home-page-main-container {
+    
+    display: flex;
+    width: 100%;
+}
+
+/*---------------- Home page - Left side ----------*/
+.home-page-left-side-main-container {
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.home-page-left-side-logo-container {
+    display: flex;
+    height: 20%;
+ 
+    width: 50%;
+    margin: 0 auto;
+}
+
+.home-page-left-side-logo {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.home-page-left-side-image-container {
+    
+    display: flex;
+    height: 60%;
+    width: 80%;
+    align-items: center;
+}
+
+.home-page-left-side-image {
+    height: 100%;
+    width: 100%;
+}
+
+.home-page-left-side-text-container {
+  
+    display: flex;
+    height: 10%;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*---------------- Home page - right side ----------*/
+.home-page-right-side-main-container {
+   
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.home-page-right-side-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.home-page-right-side-header-container {
+    background-color: purple;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    height: 20%;
+}
