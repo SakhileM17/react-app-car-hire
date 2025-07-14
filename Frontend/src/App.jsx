@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {Suspense , lazy} from 'react'
 
 // --------------- Application Components ------------
-const Home = lazy(() => import("./pages/Home"));
+const Home = lazy(() => import("./pages/Home/Home"));
 
 // ----------------- Styling ----------------
 import '../src/styles/App.css'
