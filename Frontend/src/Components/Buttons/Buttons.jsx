@@ -12,7 +12,9 @@ import '../../styles/App.css'
 function ConfirmButton({ ButtonName }) {
     return (
         <div>
-            <button className='confirm-button'>{ButtonName}</button>
+            <button className='confirm-button'>
+                {ButtonName}
+            </button>
         </div>
     )
 }
