@@ -28,7 +28,7 @@ This css file is used for the App page
 
 .application-main-container {
     display: flex;
-    background-color: var(--secondary-color);
+    background: linear-gradient(70deg, lightgrey, white);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
