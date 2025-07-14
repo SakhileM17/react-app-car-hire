@@ -1,80 +1,63 @@
 /* ------------------------------------------------------------
  Home Component
-  
- This is the landing page of the application.
+    This is the landing page of the application.
  It serves as the user's first point of interaction.
 
  Features:
  - Continue as Guest
  - Login functionality
- 
- * ------------------------------------------------------------ */
+   
+* ------------------------------------------------------------ */
 
- // -------------------- Styles ---------------
- import '../styles/Pages.css'
+// -------------------- Styles ---------------
+import '../styles/Pages.css'
 
- // -------------------- images ----------------
- import BmwM2WhiteSideCut from '../assets/images/cars/bmw_m2_white_side_cut.png'
- import EKQiCarHireLogo from '../assets/branding/Logo_car_hire.svg'
+// -------------------- images ----------------
+
+// images - cars
+import AudiRs3BlackFront from '../assets/images/cars/audi_rs3_black_front.png'
+
+// images - branding
+import EKQiCarHireLogo from '../assets/branding/Logo_car_hire.svg'
+import ConfirmButton from '../Components/Buttons/Buttons'
 
 function Home() {
-
     return (
-      
-        
         <div className="page-main-container">
-            
             <div className='home-page-main-container'>
-
-                {/* Left side of the page */}
-                <div className='home-page-left-side-main-container'>
-                    
-                    <div className='home-page-left-side-logo-container'>
-                        <img className='home-page-left-side-logo' src={EKQiCarHireLogo} />
-                    </div>
-
-                    <div className='home-page-left-side-image-container'>
-                        <img className='home-page-left-side-image' src={BmwM2WhiteSideCut}/>
-                    </div>
-
-                    <div className='home-page-left-side-text-container'>
-                        <p>Top of the range cars  with premium specifications and every available option selected.</p>
-                    </div>
-                    
+                {/* Home page header with the company logo */}
+                <div className='home-page-header-main-container'>
+                    <img className='home-page-header-logo' src={EKQiCarHireLogo} />
                 </div>
-
-                {/* Right side of the page */}
-                <div className='home-page-right-side-main-container'>
-
-                    <div className='home-page-right-side-container'>
+                
+                {/* Home page body container */}
+                <div className='home-page-body-main-container'>
+                    <div className='home-page-body-car-image-main-container'>
+                        <div>
+                            <img className='home-page-body-car-image' src={AudiRs3BlackFront} />
+                        </div>
                         
-                        {/* Header */}
-                        <div className='home-page-right-side-header-container'>
-                            <h2>Welcome to EKQi Car Hire</h2>
+                        <div className='home-page-body-button-container'>
+                            <div>
+                                <p>Click the "Explore" button to start your journey...</p>
+                            </div>
+                            
+                            <div>
+                                <ConfirmButton
+                                    ButtonName='Explore'
+                                />
+                            </div>
                         </div>
-
-                        {/* Body */}
-                        <div className='home-page-right-side-body-container'>
-                            <p>Cick here to browser our catalogue</p>
-
-                        </div>
-
-                        {/* footer */}
-                        <div className='home-page-right-side-footer-container'>
-                            <p>Not Part of out community yet , click join to be part of our growing community. </p>
-                        </div>
-
                     </div>
-                    
                 </div>
-
+                
+                {/* Home Page - Footer container */}
+                <div className='home-page-body-foot-container'>
+                    <p>Copyright EKQiEnterprises 2025. All rights reserved</p>
+                </div>
             </div>
-
         </div>
-            
-      
     )
-
-} 
+}
 
 export default Home
