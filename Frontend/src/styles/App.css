@@ -22,10 +22,32 @@ This css file is used for the App page
 
 }
 
+/*-----------------------------------------------
+                  Button
+-------------------------------------------------*/ 
+.confirm-button {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+    transition: transform 0.2s ease; /* Only animates the transform */
+}
+
+.confirm-button:hover {
+    transform: scale(1.05);
+}
+
+/**/
+
 * {
     margin: 0;
-    padding: 0;}
+    padding: 0;
+  }
 
+    /**/
 .application-main-container {
     display: flex;
     background: linear-gradient(70deg, lightgrey, white);

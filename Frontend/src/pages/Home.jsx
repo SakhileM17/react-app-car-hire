@@ -20,6 +20,7 @@
 
  // images - branding
  import EKQiCarHireLogo from '../assets/branding/Logo_car_hire.svg'
+import Button from '../Components/Buttons/Buttons'
  
 
 function Home() {
@@ -51,7 +52,9 @@ function Home() {
                             </div>
 
                             <div>
-                                <button className='home-page-body-button'>Explore</button>
+                                <ConfirmButton
+                                    ButtonName = 'Explore'
+                                />
                             </div>
 
                         

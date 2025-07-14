@@ -100,20 +100,6 @@ This css file is used for all the pages
     padding: 10px;
 }
 
-.home-page-body-button {
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
-    transition: transform 0.2s ease; /* Only animates the transform */
-}
-
-.home-page-body-button:hover {
-    transform: scale(1.05);
-}
 
 
 
