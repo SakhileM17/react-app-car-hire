@@ -9,11 +9,11 @@ import '../../styles/App.css'
 
 
 // Confirm Button - Used for when the user is submitting or proceeding to the next page
-function ConfirmButton({ ButtonName }) {
+function ConfirmButton({ ButtonName ,onClick }) {
     return (
         <div>
-            <button className='confirm-button'>
-                {ButtonName}
+            <button className='confirm-button' onClick={onClick}>
+                {ButtonName} 
             </button>
         </div>
     )

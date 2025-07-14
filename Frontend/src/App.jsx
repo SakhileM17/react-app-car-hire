@@ -9,6 +9,7 @@ const Home = lazy(() => import("./pages/Home/Home"));
 
 // ----------------- Styling ----------------
 import '../src/styles/App.css'
+import MainPage from './pages/Main/MainPage';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
 
             <Routes>
               <Route path='/' element={<Home/>} />
+              <Route path='/services' element={<MainPage/>} />
             </Routes>
 
           </Suspense>

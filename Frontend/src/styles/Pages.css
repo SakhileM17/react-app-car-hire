@@ -118,6 +118,7 @@ This css file is used for all the pages
     text-align: center;
 }
 
+
 /*------------------------------------------------------------
                 Home Page - Mobile
 ---------------------------------------------------------------*/
@@ -154,4 +155,29 @@ This css file is used for all the pages
     font-size: 13px;
     text-align: center;
     padding: 10px 0 ;
+}
+
+/*--------------------------------------------
+                Main Page
+----------------------------------------------*/ 
+
+.main-page-main-container {
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+/*------------------------------------------------------
+                Mobile Main Page 
+-------------------------------------------------------*/
+
+.home-page-body-car-image-main-container {
+    text-align: center;
+}
+
+.main-page-body-car-image {
+    width :400px;
+    margin: 0 auto;
 }

@@ -1,16 +1,14 @@
 /* ------------------------------------------------------------
  Home Component
-    This is the landing page of the application.
- It serves as the user's first point of interaction.
+    This is the landing page of the application. It serves as the user's first point of interaction.
 
- Features:
- - Continue as Guest
- - Login functionality
-   
+
 * ------------------------------------------------------------ */
 
 // ------------------ React Imports  ----------------------
 import { useState  , useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 // -------------------- Icons ------------------------
 import { VscTools } from "react-icons/vsc";
@@ -28,9 +26,13 @@ import AudiRs3BlackFront from '../../assets/images/cars/audi_rs3_black_front.png
 import EKQiCarHireLogo from '../../assets/branding/Logo_car_hire.svg'
 import ConfirmButton from '../../Components/Buttons/Buttons'
 
+
 function Home() {
     // State to track mobile screen size
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    // function - Navigation hook
+    const navigate = useNavigate();
 
     // Use Effect to handle screen resize
     useEffect(() => {
@@ -41,6 +43,16 @@ function Home() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    // --------------------- Functions ------------------
+
+    
+
+    // Handle button click to navigate to services
+    const handleExploreClick = () => {
+        navigate('/services');
+        console.log("Clicked")
+    };
 
     // Mobile Layout
     if (isMobile) {
@@ -67,6 +79,7 @@ function Home() {
                                 <div>
                                     <ConfirmButton
                                         ButtonName='Explore'
+                                        onClick={handleExploreClick}
                                     />
                                 </div>
                             </div>
@@ -106,6 +119,7 @@ function Home() {
                             <div>
                                 <ConfirmButton
                                     ButtonName='Explore'
+                                    onClick={handleExploreClick}
                                 />
                             </div>
                         </div>

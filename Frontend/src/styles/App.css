@@ -24,6 +24,15 @@ This css file is used for the App page
 
 a {
   color: grey;
+  
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+.text-secondary-color {
+  color: var(--primary-color);
 }
 
 /*-----------------------------------------------
@@ -58,4 +67,14 @@ a {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+}
+
+/*----------------------------------------------------------
+            Constructions - icons 
+---------------------------------------------------------*/
+
+.construction-icon {
+  color: var(--primary-color);
+  width: 100px;
+  height: 100px;
 }
