@@ -20,7 +20,7 @@
 
  // images - branding
  import EKQiCarHireLogo from '../assets/branding/Logo_car_hire.svg'
-import Button from '../Components/Buttons/Buttons'
+import ConfirmButton from '../Components/Buttons/Buttons'
  
 
 function Home() {
